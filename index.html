@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- 1. Metadatos básicos para el navegador y los buscadores -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conoce animales que buscan una familia y descubre cómo ayudar a las protectoras.">
+    <meta name="author" content="Huellas Felices">
+    <meta name="theme-color" content="#236b52">
+
+    <!-- 2. Vista previa al compartir la página -->
+    <meta property="og:title" content="Huellas Felices | Adopta y ayuda">
+    <meta property="og:description" content="Animales en adopción, formas de colaborar y eventos solidarios.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <title>Huellas Felices | Adopta y ayuda</title>
+
+    <!-- 3. Fuentes e iconos desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- 4. Reset propio y estilos del proyecto -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="inicio">
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <!-- 5. Cabecera y navegación principal -->
+    <header class="site-header">
+        <div class="wrap">
+            <nav class="navbar" aria-label="Navegación principal">
+                <a class="brand" href="#inicio">
+                    <span class="material-icons-outlined" aria-hidden="true">pets</span>
+                    <span>Huellas <strong>Felices</strong></span>
+                </a>
+                <ul class="menu">
+                    <li><a href="#inicio" aria-current="page">Inicio</a></li>
+                    <li><a href="#animales">Animales</a></li>
+                    <li><a href="#adopcion">Adopción</a></li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                    <li><a href="#protectoras">Protectoras</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 6. Contenido principal: enlaces laterales y artículos -->
+    <main class="wrap layout" id="contenido">
+        <aside class="sidebar" aria-labelledby="atajos-titulo">
+            <h2 id="atajos-titulo">Enlaces rápidos</h2>
+            <ul>
+                <li><a href="#animales">Ver animales disponibles</a></li>
+                <li><a href="#adopcion">Cómo adoptar</a></li>
+                <li><a href="#ayuda">Ayudar a una protectora</a></li>
+                <li><a href="#protectoras">Conocer las protectoras</a></li>
+                <li><a href="#eventos">Próximos eventos</a></li>
+            </ul>
+        </aside>
+
+        <section class="content" id="animales" aria-labelledby="animales-titulo">
+            <header class="section-head">
+                <p class="eyebrow">Una familia les cambia la vida</p>
+                <h1 id="animales-titulo">Animales en adopción</h1>
+                <p>Conoce a quienes esperan una oportunidad y un hogar responsable.</p>
+            </header>
+
+            <!-- Artículos repetidos: Flexbox reparte las tarjetas en filas adaptables -->
+            <div class="articles">
+                <article class="card" id="luna">
+                    <img class="card__image" src="images/perra.webp" alt="Luna, una perra en adopción">
+                    <div class="card-body">
+                        <p class="card__tag">Perra · 2 años</p>
+                        <h2>Luna</h2>
+                        <p>Curiosa, energética y muy cariñosa. Busca una familia con ganas de pasear.</p>
+                        <a class="btn" href="#adopcion">Conocer a Luna</a>
+                    </div>
+                </article>
+
+                <article class="card" id="miau">
+                    <img class="card__image" src="images/gato.webp" alt="Miau, un gato en adopción">
+                    <div class="card-body">
+                        <p class="card__tag">Gato · 1 año</p>
+                        <h2>Miau</h2>
+                        <p>Tranquilo y hogareño. Disfruta de las siestas y de la compañía cercana.</p>
+                        <a class="btn" href="#adopcion">Conocer a Miau</a>
+                    </div>
+                </article>
+
+                <article class="card" id="max">
+                    <img class="card__image" src="images/perro.webp" alt="Max, un perro en adopción">
+                    <div class="card-body">
+                        <p class="card__tag">Perro · 3 años</p>
+                        <h2>Max</h2>
+                        <p>Juguetón y sociable. Le encanta aprender y compartir actividades al aire libre.</p>
+                        <a class="btn" href="#adopcion">Conocer a Max</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Información breve enlazada desde el menú y los botones -->
+            <section class="info-panel" id="adopcion" aria-labelledby="adopcion-titulo">
+                <h2 id="adopcion-titulo">Adoptar es un compromiso</h2>
+                <p>La protectora te acompañará para encontrar un animal compatible con tu hogar y tu estilo de vida.</p>
+                <div class="info-panel__links">
+                    <a id="ayuda" href="#contacto">Cómo ayudar</a>
+                    <a id="protectoras" href="#contacto">Contactar con una protectora</a>
+                    <a id="eventos" href="#contacto">Consultar eventos solidarios</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- 7. Pie con identidad del proyecto y enlaces sociales -->
+    <footer class="site-footer" id="contacto">
+        <div class="wrap footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="#inicio">
+                    <span class="material-icons-outlined" aria-hidden="true">pets</span>
+                    <span>Huellas <strong>Felices</strong></span>
+                </a>
+                <p>Un hogar, una nueva oportunidad.</p>
+            </div>
+
+            <nav class="footer-social" aria-label="Redes sociales">
+                <a href="https://www.facebook.com/" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="">
+                </a>
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="">
+                </a>
+                <a href="https://x.com/" aria-label="X">
+                    <img src="images/Twiter.svg" alt="">
+                </a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Huellas Felices · Proyecto de maquetación con Flexbox</p>
+        </div>
+    </footer>
+
+    <!-- 8. Acceso fijo para volver al inicio -->
+    <a class="fab" href="#inicio" aria-label="Volver arriba" title="Volver arriba">
+        <span class="material-icons-outlined" aria-hidden="true">arrow_upward</span>
+    </a>
+</body>
+</html>
